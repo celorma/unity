@@ -70,7 +70,7 @@ public class character : MonoBehaviour
         else direction = Vector2.left;
         Animator.SetBool("Shoot", true);
 
-        GameObject bullet = Instantiate(BulletPrefab, transform.position + new Vector3(0, transform.position.y - 0.365f,0) +direction * 0.1f, Quaternion.identity);
+        GameObject bullet = Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 0.05f, 0) + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<bullet>().SetDirection(direction);
     }
 
