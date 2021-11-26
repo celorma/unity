@@ -6,13 +6,16 @@ public class character : MonoBehaviour
 {
 
     private Rigidbody2D Rigidbody2D;
-    private Animator Animator;
+    internal Animator Animator;
 
     private float Horizontal;
     private bool Grounded;
+    private float LastShoot;
+    
 
     [SerializeField] float JumpForce;
     [SerializeField] float Speed;
+    [SerializeField] GameObject BulletPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -31,23 +34,51 @@ public class character : MonoBehaviour
 
         Animator.SetBool("Running", Horizontal != 0.0f);
 
-        Debug.DrawRay(transform.position, Vector3.down * 0.11f, Color.red);
-        if (Physics2D.Raycast(transform.position, Vector3.down, 0.11f))
+        Debug.DrawRay(transform.position, Vector3.down * 0.26f, Color.red);
+        if (Physics2D.Raycast(transform.position, Vector3.down, 0.26f))
         {
             Grounded = true;
+            Animator.SetBool("Jump", false);
         }
         else Grounded = false;
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && Grounded)
+        if (Input.GetKeyDown(KeyCode.Z) && Grounded)
         {
             Jump();
         }
+
+        if (Input.GetKeyDown(KeyCode.X) && Time.time > LastShoot + 0.25f)
+        {
+            Shoot();
+            LastShoot = Time.time;
+
+        }
+
     }
 
     private void Jump()
     {
         Rigidbody2D.AddForce(Vector2.up * JumpForce);
+        Animator.SetBool("Jump", true);
     }
+
+    private void Shoot()
+    {
+        Vector3 direction;
+        
+        if (transform.localScale.x == 1) direction = Vector2.right;
+        else direction = Vector2.left;
+        Animator.SetBool("Shoot", true);
+
+        GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.2f, Quaternion.identity);
+        bullet.GetComponent<bullet>().SetDirection(direction);
+    }
+
+    public void EndShoot()
+    {
+        Animator.SetBool("Shoot", false);
+    }
+
 
     private void FixedUpdate()
     {

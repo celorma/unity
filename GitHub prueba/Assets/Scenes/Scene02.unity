@@ -610,18 +610,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01736113, y: -0.0053188205}
+  m_Offset: {x: -0.0053189658, y: -0.019941479}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.18}
-    newSize: {x: 0.19, y: 0.18}
+    oldSize: {x: 0.52, y: 0.52}
+    newSize: {x: 0.52, y: 0.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08603328, y: 0.13285053}
+  m_Size: {x: 0.11011761, y: 0.43390566}
   m_EdgeRadius: 0
 --- !u!114 &517763789
 MonoBehaviour:
@@ -637,6 +637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpForce: 80
   Speed: 1.2
+  BulletPrefab: {fileID: 6139731040663114459, guid: 6e4c44addb70b21468ab72a3340b84a7,
+    type: 3}
 --- !u!50 &517763790
 Rigidbody2D:
   serializedVersion: 4
@@ -697,13 +699,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 5351466020072668525, guid: 3301fa277b28e884997cba24699adbfc,
+  m_Sprite: {fileID: -4546049112143547957, guid: 90e1bcfedba16d74a9eef31db84d8d41,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.19, y: 0.18}
+  m_Size: {x: 0.52, y: 0.52}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -717,7 +719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517763786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.277, y: 0.7003436, z: 1}
+  m_LocalPosition: {x: 2.81, y: 0.65, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

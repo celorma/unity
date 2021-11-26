@@ -1,0 +1,1202 @@
+fileFormatVersion: 2
+guid: 90e1bcfedba16d74a9eef31db84d8d41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4546049112143547957
+    second: JBOT-all_animations-Sheet_01_0
+  - first:
+      213: -9119451117746838568
+    second: JBOT-all_animations-Sheet_01_1
+  - first:
+      213: -6110370171024048795
+    second: JBOT-all_animations-Sheet_01_2
+  - first:
+      213: -1426395621655909854
+    second: JBOT-all_animations-Sheet_01_3
+  - first:
+      213: 8662316836923718021
+    second: JBOT-all_animations-Sheet_01_4
+  - first:
+      213: -6690110313259891452
+    second: JBOT-all_animations-Sheet_01_5
+  - first:
+      213: -1342930170249595499
+    second: JBOT-all_animations-Sheet_01_6
+  - first:
+      213: -3890329968164714449
+    second: JBOT-all_animations-Sheet_01_7
+  - first:
+      213: 1354010260930814897
+    second: JBOT-all_animations-Sheet_01_8
+  - first:
+      213: -7508553861470683007
+    second: JBOT-all_animations-Sheet_01_9
+  - first:
+      213: -2626844191011715249
+    second: JBOT-all_animations-Sheet_01_10
+  - first:
+      213: -7754256093656868168
+    second: JBOT-all_animations-Sheet_01_11
+  - first:
+      213: 1576678692942149848
+    second: JBOT-all_animations-Sheet_01_12
+  - first:
+      213: -6114476659074220153
+    second: JBOT-all_animations-Sheet_01_13
+  - first:
+      213: 3667388538075677014
+    second: JBOT-all_animations-Sheet_01_14
+  - first:
+      213: -8408478540435252915
+    second: JBOT-all_animations-Sheet_01_15
+  - first:
+      213: -1698363723908372222
+    second: JBOT-all_animations-Sheet_01_16
+  - first:
+      213: 4181420688212237746
+    second: JBOT-all_animations-Sheet_01_17
+  - first:
+      213: 2497989469074031034
+    second: JBOT-all_animations-Sheet_01_18
+  - first:
+      213: -4117717026108064257
+    second: JBOT-all_animations-Sheet_01_19
+  - first:
+      213: 2205647308495690087
+    second: JBOT-all_animations-Sheet_01_20
+  - first:
+      213: 2619420811991459859
+    second: JBOT-all_animations-Sheet_01_21
+  - first:
+      213: -1322869687474943435
+    second: JBOT-all_animations-Sheet_01_22
+  - first:
+      213: -7936517675721709921
+    second: JBOT-all_animations-Sheet_01_23
+  - first:
+      213: 8949872495399482958
+    second: JBOT-all_animations-Sheet_01_24
+  - first:
+      213: 5013116346455090954
+    second: JBOT-all_animations-Sheet_01_25
+  - first:
+      213: -5289086267811145540
+    second: JBOT-all_animations-Sheet_01_26
+  - first:
+      213: 233535684163051418
+    second: JBOT-all_animations-Sheet_01_27
+  - first:
+      213: 7073883562047533862
+    second: JBOT-all_animations-Sheet_01_28
+  - first:
+      213: 2924112442283914813
+    second: JBOT-all_animations-Sheet_01_29
+  - first:
+      213: 3921922746122436295
+    second: JBOT-all_animations-Sheet_01_30
+  - first:
+      213: -4594071661958851583
+    second: JBOT-all_animations-Sheet_01_31
+  - first:
+      213: -4755896187420452030
+    second: JBOT-all_animations-Sheet_01_32
+  - first:
+      213: 7140552533735671661
+    second: JBOT-all_animations-Sheet_01_33
+  - first:
+      213: -5958419398771497012
+    second: JBOT-all_animations-Sheet_01_34
+  - first:
+      213: 8727735510495128972
+    second: JBOT-all_animations-Sheet_01_35
+  - first:
+      213: -5749972428414168360
+    second: JBOT-all_animations-Sheet_01_36
+  - first:
+      213: 7160968814983442758
+    second: JBOT-all_animations-Sheet_01_37
+  - first:
+      213: -6381206686512702729
+    second: JBOT-all_animations-Sheet_01_38
+  - first:
+      213: -2930559600989847742
+    second: JBOT-all_animations-Sheet_01_39
+  - first:
+      213: -1495244607850773655
+    second: JBOT-all_animations-Sheet_01_40
+  - first:
+      213: -6505009911759570909
+    second: JBOT-all_animations-Sheet_01_41
+  - first:
+      213: -4041624862064511231
+    second: JBOT-all_animations-Sheet_01_42
+  - first:
+      213: 2895599445315329881
+    second: JBOT-all_animations-Sheet_01_43
+  - first:
+      213: -453226357365535370
+    second: JBOT-all_animations-Sheet_01_44
+  - first:
+      213: -7601440095218869623
+    second: JBOT-all_animations-Sheet_01_45
+  - first:
+      213: 3566272527887026596
+    second: JBOT-all_animations-Sheet_01_46
+  - first:
+      213: -1680144609144455926
+    second: JBOT-all_animations-Sheet_01_47
+  - first:
+      213: -2087014437937914142
+    second: JBOT-all_animations-Sheet_01_48
+  - first:
+      213: 2355990861599227699
+    second: JBOT-all_animations-Sheet_01_49
+  - first:
+      213: -7849462644890564777
+    second: JBOT-all_animations-Sheet_01_50
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc134332b6039e0c0800000000000000
+      internalID: -4546049112143547957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3292c7683317180800000000000000
+      internalID: -9119451117746838568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56df7fd14ba933ba0800000000000000
+      internalID: -6110370171024048795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ae60e4dbc643ce0800000000000000
+      internalID: -1426395621655909854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58939bca44bb63870800000000000000
+      internalID: 8662316836923718021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40587f5ad14f723a0800000000000000
+      internalID: -6690110313259891452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_6
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 364
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5953e141024fc5de0800000000000000
+      internalID: -1342930170249595499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f284c7c7185c20ac0800000000000000
+      internalID: -3890329968164714449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3e30198296ac210800000000000000
+      internalID: 1354010260930814897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18007268b024cc790800000000000000
+      internalID: -7508553861470683007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47c27a30239b8bd0800000000000000
+      internalID: -2626844191011715249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba9c28aa29536490800000000000000
+      internalID: -7754256093656868168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d87eb9eaec71e510800000000000000
+      internalID: 1576678692942149848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_13
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fb67cdfd3052ba0800000000000000
+      internalID: -6114476659074220153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 312
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6510759d17e25e230800000000000000
+      internalID: 3667388538075677014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d499cd741551f4b80800000000000000
+      internalID: -8408478540435252915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_16
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 260
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209280101333e68e0800000000000000
+      internalID: -1698363723908372222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 260
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd1c5936f3670a30800000000000000
+      internalID: 4181420688212237746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 260
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab103dcef24aaa220800000000000000
+      internalID: 2497989469074031034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 260
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd304d6e2eead6c0800000000000000
+      internalID: -4117717026108064257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7699ea28a880c9e10800000000000000
+      internalID: 2205647308495690087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_21
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 208
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3182408a95d0a5420800000000000000
+      internalID: 2619420811991459859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 208
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a8ce1370934ade0800000000000000
+      internalID: -1322869687474943435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_23
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 208
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96aff03933dbd190800000000000000
+      internalID: -7936517675721709921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_24
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e463359bd95543c70800000000000000
+      internalID: 8949872495399482958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07e828a1ca229540800000000000000
+      internalID: 5013116346455090954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 156
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb858bcef046996b0800000000000000
+      internalID: -5289086267811145540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_27
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 156
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f9ae8a77fad3300800000000000000
+      internalID: 233535684163051418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_28
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 156
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6237152ee9b7b2260800000000000000
+      internalID: 7073883562047533862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 156
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36f1ad06c8849820800000000000000
+      internalID: 2924112442283914813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cef62755f77d6630800000000000000
+      internalID: 3921922746122436295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 104
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1041144f9249e30c0800000000000000
+      internalID: -4594071661958851583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_32
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 104
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b5b288d99affdb0800000000000000
+      internalID: -4755896187420452030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_33
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 104
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67845972b6581360800000000000000
+      internalID: 7140552533735671661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7ad6930217f4da0800000000000000
+      internalID: -5958419398771497012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_35
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8def9c84352f1970800000000000000
+      internalID: 8727735510495128972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_36
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 52
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d255108a8ef330b0800000000000000
+      internalID: -5749972428414168360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641fcb0623fd06360800000000000000
+      internalID: 7160968814983442758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_38
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa1014e3566177a0800000000000000
+      internalID: -6381206686512702729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_39
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fb3e5d19f8457d0800000000000000
+      internalID: -2930559600989847742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_40
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9638cb883f2df3be0800000000000000
+      internalID: -1495244607850773655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328fc2543ff89b5a0800000000000000
+      internalID: -6505009911759570909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_42
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f145f99349e7c0800000000000000
+      internalID: -4041624862064511231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_43
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f96dd9a5c3f2820800000000000000
+      internalID: 2895599445315329881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JBOT-all_animations-Sheet_01_44
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d026e7701d5b9f0800000000000000
+      internalID: -453226357365535370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
