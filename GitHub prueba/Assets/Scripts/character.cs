@@ -40,14 +40,17 @@ public class character : MonoBehaviour
             Grounded = true;
             Animator.SetBool("Jump", false);
         }
-        else Grounded = false;
+        else
+        {
+            Grounded = false;
+        }
 
         if (Input.GetKeyDown(KeyCode.Z) && Grounded)
         {
             Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.X) && Time.time > LastShoot + 0.25f)
+        if (Input.GetKeyDown(KeyCode.X) && Time.time > LastShoot + 0.26f)
         {
             Shoot();
             LastShoot = Time.time;
@@ -70,7 +73,7 @@ public class character : MonoBehaviour
         else direction = Vector2.left;
         Animator.SetBool("Shoot", true);
 
-        GameObject bullet = Instantiate(BulletPrefab, transform.position + direction * 0.2f, Quaternion.identity);
+        GameObject bullet = Instantiate(BulletPrefab, new Vector3(transform.position.x, transform.position.y + 0.05f, 0) + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<bullet>().SetDirection(direction);
     }
 

@@ -13369,6 +13369,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &1900424381
 GameObject:
   m_ObjectHideFlags: 0
@@ -13522,6 +13523,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1937441017
+=======
+--- !u!1 &976224682
+>>>>>>> 3c5006c8186fa6bde8e0948fc17770345c2dca9c
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
