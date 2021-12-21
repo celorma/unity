@@ -107,7 +107,11 @@ public class Enemy2 : MonoBehaviour
             flip(movHor);
             //evitar caer en precipicio
 
+
+        // CAMBIO
             updateGround();
+        // CAMBIO
+
 
             updateWalls();
 
@@ -153,12 +157,14 @@ public class Enemy2 : MonoBehaviour
 
     }
 
+    // CAMBIO
     private void updateGround()
     {
         isGroundFloor = detectTrigger.OverlapCollider(contactFilter, detectGroundResults) > 0;
         if (!isGroundFloor)
             movHor *= -1;
     }
+    // CAMBIO
 
     private void updateWalls()
     {
