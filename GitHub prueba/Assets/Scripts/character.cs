@@ -35,7 +35,7 @@ public class character : MonoBehaviour
         Animator.SetBool("Running", Horizontal != 0.0f);
 
         Debug.DrawRay(transform.position, Vector3.down * 0.26f, Color.red);
-        if (Physics2D.Raycast(transform.position, Vector3.down, 0.26f))
+        if (Physics2D.Raycast(transform.position, Vector3.down, 0.3f))
         {
             Grounded = true;
             Animator.SetBool("Jump", false);
