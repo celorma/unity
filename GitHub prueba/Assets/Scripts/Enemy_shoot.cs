@@ -4,48 +4,41 @@ using UnityEngine;
 
 public class Enemy_shoot : MonoBehaviour
 {
-    private Rigidbody2D rb;
 
-    private Animator anim;
-    private SpriteRenderer spr;
+    //Script universal para mobs dentro del videojuego
 
-    public float movHor = 0f;
-    public float speed = 3f;
+    private Rigidbody2D rb; //variable RigidBody2D
+    private Animator anim; //variable Animator
+    private SpriteRenderer spr; //variable SpriteRenderer
 
-    public bool attack = false;
-    public bool isMoving = false;
-    public bool isGroundFloor = true;
-    public bool isGroundFront = false;
+    public int movHor = 0; //Indicador de la dirección horizontal del enemigo
+    public float speed = 3f; //Velocidad del enemigo
 
+    //Estados del enemigo
+    public bool attack = false; //¿está atacando?
+    public bool isMoving = false; //¿se está moviendo?
+    public bool isGroundFloor = true; //¿está en contacto con el suelo
+    public bool isGroundFront = false; //¿está en contacto con algún muro?
 
+    public float distancia;
+    public Transform player_pos; //Posición del jugador 
+    public float distanciaMaximaEnemyPlayer = 2.5f; //(distancia máxima en la que el jugador es targeteado pro el enemigo)
+    public float distancia_frenado = 1.5f; //(distancia de cercanía al jugador donde el enemigo se detiene para atacar)
+    public float distancia_retraso = 2f; //(distancia de cercanía al jugador donde el enemigo retrocede)
 
-    private Collider2D[] detectGroundResults;
+    public float corregirDistanciaRayEnY = 0f; //Variable para corregir punto de origen del Raycast en el sprite
+    public float distanciaColisionY = 0f; //Distancia definida desde el sistema para definir la distancia necesaria para detectar suelo
+    public float distanciaColisionX = 0f; //Distancia definida desde el sistema para definir la distancia necesaria para detectar colisiones en el eje Y (horizontal)
 
-    [SerializeField] private Collider2D detectTrigger;
-    [SerializeField] private ContactFilter2D contactFilter;
-
-
-    public LayerMask groundLayer;
-    public float frontGrndRayDist = 0.25f;
-    public float floorCheckY = 0.52f;
-    public float frontCheck = 0.51f;
-    public float frontDist = 0.001f;
-
-    private Vector3 moveToPosition;
-
-    public Transform player_pos;
-    public float distancia_frenado = 3f;
-    public float distancia_retraso = 2f;
+    //Falta por implementar el ataque de los enemigos (hay que usar scripts aparte)
 
     public Transform punto_salida;
     public GameObject fireball;
-    private float tiempo;
-
-    public int score = 50;
+    private float tiempo = 0;
 
     private RaycastHit2D hit;
 
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -53,104 +46,148 @@ public class Enemy_shoot : MonoBehaviour
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
 
-        player_pos = GameObject.Find("Character").transform;
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //obtener un valor al azar (-1 ó 1) para definir la dirección de los enemigos al inicio
         if (movHor == 0)
         {
-
-            if (Vector2.Distance(transform.position, player_pos.position) > distancia_frenado)
-                transform.position = Vector2.MoveTowards(transform.position, player_pos.position, speed * Time.deltaTime);
+            int auxi = Random.Range(-1, 1);
+            if (auxi != 0)
             {
-                isMoving = true;
-
-                attack = true;
-
-
-                anim.SetBool("attack", attack);
-
-                anim.SetBool("isMoving", isMoving);
-
-                flip(player_pos.position.x - transform.position.x);
+                movHor = auxi;
             }
+            transform.Translate(speed*movHor * Time.deltaTime, 0, 0);
+            flip(movHor);
+        }
+        
 
-            if (Vector2.Distance(transform.position, player_pos.position) < distancia_retraso)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, player_pos.position, -speed * Time.deltaTime);
-
-                isMoving = true;
-
-                attack = false;
-
-                anim.SetBool("attack", attack);
-
-                anim.SetBool("isMoving", isMoving);
-
-                flip(player_pos.position.x - transform.position.x);
-            }
-
-            if (Vector2.Distance(transform.position, player_pos.position) < distancia_frenado && Vector2.Distance(transform.position, player_pos.position) > distancia_retraso)
-            {
-                transform.position = transform.position; 
-                flip(player_pos.position.x - transform.position.x);
-
-            }
-            
-           
+        //analisis de Raycast
+        Debug.DrawRay(transform.position, Vector3.down * distanciaColisionY, Color.red, 1);
+        if (Physics2D.Raycast(transform.position, Vector3.down, distanciaColisionY)) //si existe contacto con el suelo
+        {
+            isGroundFloor = true;
 
         }
-        /*
         else
-        if (movHor != 0)
-            isMoving = (movHor != 0);
+        {
+            isGroundFloor = false;
+        }
 
-            anim.SetBool("isMoving", isMoving);
+        //nuevo vector 3 auxiliar para corregir altura del Raycast del enemigo 
+        Vector3 aux = new Vector3(transform.position.x, transform.position.y + corregirDistanciaRayEnY, transform.position.z);
 
-            flip(movHor);
-        //evitar caer en precipicio
-
-            updateGround();
-
-            updateWalls();
-
-        /*
-        isGroundFloor = Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y - floorCheckY, transform.position.z), new Vector3(movHor,0,0), frontGrndRayDist, groundLayer);
-
-        if (!isGroundFloor)
-            movHor *= -1;
-        */
-
-        //choque con pared
-        /*
-        isGroundFront = Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y - floorCheckY, transform.position.z), new Vector3(movHor, 0, 0), frontGrndRayDist, groundLayer);
-
-        if (!isGroundFront)
-            movHor *= -1;
-        
-
-
-            if (Physics2D.Raycast(transform.position, new Vector3(movHor, 0, 0), frontCheck, groundLayer))
+        //analisis de Raycast
+        Debug.DrawRay(aux, new Vector3(movHor,0,0) * distanciaColisionX, Color.blue, 1);
+        if (Physics2D.Raycast(aux, new Vector3(movHor, 0, 0), distanciaColisionX)) //si existe colision en eje X (horizontal)
+        {
+            if (Physics2D.Raycast(aux, new Vector3(movHor, 0, 0), distanciaColisionX).collider.gameObject.tag == "Enemy") //si existe colision en eje X con otro enemigo
+            {
                 movHor *= -1;
+                flip(movHor);
+            }
+            else
+            {
+                // Colisión con jugador 
+                if (Physics2D.Raycast(aux, new Vector3(movHor,0,0), distanciaColisionX).collider.gameObject.tag != "Player")
+                {
+                    isGroundFront = true;
+                }
+            }
+        }
+        else
+        {
+            isGroundFront = false;
+        }
 
-            //choque con otro enemigo
 
-            hit = Physics2D.Raycast(new Vector3(transform.position.x + movHor * frontCheck, transform.position.y, transform.position.z), new Vector3(movHor, 0, 0), frontDist);
+        player_pos = findClosest().transform;
 
-            if (hit != null)
-                if (hit.transform != null)
-                    if (hit.transform.CompareTag("Enemy"))
-                        movHor *= -1;
-            */
-        
+        distancia = Vector2.Distance(transform.position, player_pos.position);
 
+        //Verificamos si el enemigo está a menos de la distancia máxima del jugador
+        if (Vector2.Distance(transform.position, player_pos.position) <= distanciaMaximaEnemyPlayer)
+        {
+            //1er caso: la distancia entre enemigo y jugador es mayor a la distancia de frenado 
+            if (Vector2.Distance(transform.position, player_pos.position) > distancia_frenado)
+            {
+                if (!isGroundFloor || isGroundFront)
+                {
+                    anim.SetBool("isMoving", false);
+                    transform.position = transform.position;
+                }
 
+                //El enemigo no ataca y solo se limita a acercarse al jugador
 
+                attack = false;
+                anim.SetBool("attack", attack);
 
+                isMoving = true;
+                anim.SetBool("isMoving", isMoving);
+
+                transform.position = Vector2.MoveTowards(transform.position, player_pos.position, speed * Time.deltaTime);
+                
+                flip(player_pos.position.x - transform.position.x);
+            }
+            //2do caso: la distancai entre enemigo y jugador es menor a la distancia de retroceso
+            if (Vector2.Distance(transform.position, player_pos.position) <= distancia_retraso)
+            {
+                if (!isGroundFloor || isGroundFront)
+                {
+                    isMoving = false;
+                    anim.SetBool("isMoving", isMoving);
+                    transform.position = transform.position;
+                }
+                else
+                {
+                    isMoving = true;
+                    anim.SetBool("isMoving", isMoving);
+
+                    transform.position = Vector2.MoveTowards(transform.position, player_pos.position, -speed * 2f * Time.deltaTime);
+
+                    flip(player_pos.position.x - transform.position.x);
+                }
+
+                //El enemigo no ataca y solo se limita a alejarse del jugador
+
+                
+            }
+            //3er caso: la distancia entre enemigo y jugador es menor o igual a la distancia de frenado y mayor a la distancia de retroceso
+            if (Vector2.Distance(transform.position, player_pos.position) <= distancia_frenado && Vector2.Distance(transform.position, player_pos.position) > distancia_retraso)
+            {
+                //El enemigo deja de moverse y comienza a atacar
+
+                attack = true;
+                anim.SetBool("attack", attack);
+
+                isMoving = false;
+                anim.SetBool("isMoving", isMoving);
+
+                transform.position = transform.position;
+
+                flip(player_pos.position.x - transform.position.x);
+            }
+            
+        }
+        //en el caso de haber una distancia mayor a la distancia máxima entre enemigo y jugador, el enemigo se comportará de manera normal sin atacar al no notar la presencia del jugador
+        else
+        {
+            if (!isGroundFloor) //Si el enemigo pierde contacto con suelo, dará la vuelta
+            {
+                movHor *= -1;
+                flip(movHor);
+            }
+
+            if (isGroundFront) //Si el enemigo entra en contacto con un muro, se dará la vuelta
+            {
+                movHor *= -1;
+                flip(movHor);
+            }
+        }
     }
 
     void FixedUpdate()
@@ -159,34 +196,46 @@ public class Enemy_shoot : MonoBehaviour
 
     }
 
-    private void updateGround()
+    //Encontrar al jugador más cercano
+    public GameObject findClosest()
     {
-        isGroundFloor = detectTrigger.OverlapCollider(contactFilter, detectGroundResults) > 0;
-        if (!isGroundFloor)
-            movHor *= -1;
+        GameObject[] players;
+        players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject closest = null;
+        float distancia = Mathf.Infinity;
+        Vector3 posicion = transform.position;
+        foreach (GameObject player in players)
+        {
+            Vector3 diferenciaDistancia = player.transform.position - posicion;
+            float currentDistancia = diferenciaDistancia.sqrMagnitude;
+            if (currentDistancia < distancia)
+            {
+                closest = player;
+                distancia = currentDistancia;
+            }
+        }
+        return closest;
     }
 
-    private void updateWalls()
-    {
-        isGroundFront = detectTrigger.OverlapCollider(contactFilter, detectGroundResults) > 0;
-        if (!isGroundFront)
-            movHor *= -1;
-    }
-
+    //Voltear sprite del enemigo según su dirección en el eje X (-1 o 1)
     private void flip(float valor)
     {
 
         if (valor < 0)
+        {
             spr.flipX = true;
+        }
         else
-        if (valor > 0)
-            spr.flipX = false;
+        {
+            if (valor > 0)
+            {
+                spr.flipX = false;
+            }
+               
+        }
+        
 
     }
-
-    private void getKilled()
-    {
-        gameObject.SetActive(false);
-    }
+    
 }
 
