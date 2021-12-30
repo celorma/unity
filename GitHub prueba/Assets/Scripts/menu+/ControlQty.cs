@@ -5,7 +5,7 @@ using TMPro;
 
 public class ControlQty : MonoBehaviour
 {
-    public TMP_Dropdown dropd;
+    [SerializeField] public TMP_Dropdown dropd;
     public int calidad;
     // Start is called before the first frame update
     void Start()

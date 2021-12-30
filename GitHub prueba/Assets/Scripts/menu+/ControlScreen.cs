@@ -6,9 +6,9 @@ using TMPro;
 
 public class ControlScreen : MonoBehaviour
 {
-    public Toggle toggle;
+    [SerializeField] public Toggle toggle;
 
-    public TMP_Dropdown resolucion;
+    [SerializeField] public TMP_Dropdown resolucion;
     Resolution[] resoluciones;
 
     // Start is called before the first frame update

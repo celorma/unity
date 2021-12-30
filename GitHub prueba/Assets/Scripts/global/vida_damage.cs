@@ -9,11 +9,9 @@ public class vida_damage : MonoBehaviour
     public bool invencible = false;
     public float tiempo_invencible;
     public int totalScore = 0;
-    public SpriteRenderer spr;
+    private SpriteRenderer spr;
 
     public GameObject canvas;
-
-    public GameObject player;
  
     private Animator anim;
 
@@ -31,19 +29,13 @@ public class vida_damage : MonoBehaviour
             anim.Play("Damage");
             vida -= cantidad;
             StartCoroutine(invencibilidad());
-            if (totalScore >= 5)
-            {
-                totalScore -= 5;
-            }
-            if (totalScore < 5)
-            {
-                totalScore = 0;
-            }
+            character.score -= 10;
         }
         if (vida <= 0)
         {
             Time.timeScale = 0f;
             anim.updateMode = AnimatorUpdateMode.UnscaledTime;
+            character.score = 0;
             anim.Play("Death");
             
 

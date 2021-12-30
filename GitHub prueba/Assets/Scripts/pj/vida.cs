@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class vida : MonoBehaviour
 {
-    public Image barraVida;
+    [SerializeField] public Image barraVida;
     public float vidaActual;
     public float vidaMax;
 
-    public GameObject player;
+    [SerializeField] public GameObject player;
 
     // Update is called once per frame
     void Update()

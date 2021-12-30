@@ -9,10 +9,15 @@ public class PopupPause : MonoBehaviour
 {
     public bool gameIsPaused = false;
 
-    public GameObject pauseMenu;
-    public GameObject optionsMenu;
-    public GameObject gameOverMenu;
+    [SerializeField] public GameObject pauseMenu;
+    [SerializeField] public GameObject optionsMenu;
+    [SerializeField] public GameObject gameOverMenu;
+    [SerializeField] public GameObject inventary;
+    [SerializeField] public GameObject key;
 
+    public static bool hayLlave = false; 
+
+    public bool activo = false;
 
     void Update()
     {
@@ -24,19 +29,27 @@ public class PopupPause : MonoBehaviour
             }
             else
             {
-                pausar();
+                if(!activo)
+                    pausar();
             }
         }
-        /*
-        buttonOptions.onClick.AddListener(() =>
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            optionsMenu.SetActive(true);
-        });
-        buttonBack.onClick.AddListener(() =>
-        {
-            optionsMenu.SetActive(false);
-        });
-        */
+            if (activo)
+            {
+                activo = false;
+                inventario(activo);
+            }
+            else
+            {
+                if (!gameIsPaused)
+                {
+                    activo = true;
+                    inventario(activo);
+                }
+            }
+            
+        }
     }
 
     public void resumir()
@@ -66,38 +79,27 @@ public class PopupPause : MonoBehaviour
     public void gameOver()
     {
         gameOverMenu.SetActive(true);
-    }
-
-
-    /*
-    [SerializeField] Button continuar;
-    [SerializeField] Button options;
-    [SerializeField] Button salir;
-    [SerializeField] TextMesh textoContinuar;
-    [SerializeField] TextMesh textoOptions;
-    [SerializeField] TextMesh textoSalir;
-    [SerializeField] Text textoPopup;
-
-
-    public void Init(Transform canvas, string popupMsg, string btnContinuetxt, string btnOptionstxt, string btnSalirtxt, Action action)
-    {
-        textoPopup.text = popupMsg;
-        textoContinuar.text = btnContinuetxt;
-        textoOptions.text = btnOptionstxt;
-        textoSalir.text = btnSalirtxt;
-
-        transform.SetParent(canvas);
-        transform.localScale = Vector3.one;
-        GetComponent<RectTransform>().offsetMin = Vector2.zero;
-        GetComponent<RectTransform>().offsetMax = Vector2.zero;
-
-        //no.OnPointerEnter(Instantiate(sonidoUp));
-
-        continuar.onClick.AddListener(() =>
+        if (hayLlave)
         {
-            GameObject.Destroy(this.gameObject);
-        });
-
+            key.SetActive(false);
+        }
     }
-    */
+
+    public void inventario(bool abrir)
+    {
+        inventary.SetActive(abrir);
+        if (abrir)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void llave()
+    {
+        key.SetActive(hayLlave);
+    }
 }

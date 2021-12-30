@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public void reloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+    }
     public void cargarScreen(string nombreLv)
     {
         SceneManager.LoadScene(nombreLv);
@@ -20,6 +25,7 @@ public class Menu : MonoBehaviour
     public void salirVG()
     {
         Application.Quit();
+        Time.timeScale = 1f;
     }
 
 }

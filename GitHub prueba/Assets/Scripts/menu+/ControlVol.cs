@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ControlVol : MonoBehaviour
 {
-    public Slider slider;
+    [SerializeField] public Slider slider;
     public float valorSlider;
-    public Image imgMute;
+    [SerializeField] public Image imgMute;
 
     // Start is called before the first frame update
     void Start()

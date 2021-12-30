@@ -17,8 +17,9 @@ public class vida_enemy : MonoBehaviour
 
     public void getKilled()
     {
-        anim.Play("Death");
+        anim.Play("die");
         GameObject.Destroy(gameObject);
+        character.score += score;
     }
 
     public void getDamage(float damage)
@@ -26,8 +27,10 @@ public class vida_enemy : MonoBehaviour
         if (vida > 0 && !invencible)
         {
             vida -= damage;
-            anim.Play("hit");
+            anim.Play("damage");
             StartCoroutine(invencibilidad());
+            character.cargaSpec += 20;
+            character.score += 10;
         }
         if (vida <= 0)
         {
