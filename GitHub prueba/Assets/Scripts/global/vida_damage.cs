@@ -31,7 +31,7 @@ public class vida_damage : MonoBehaviour
             StartCoroutine(invencibilidad());
             character.score -= 10;
         }
-        if (vida <= 0)
+        if (vida <= 0 || transform.position.y == -5)
         {
             Time.timeScale = 0f;
             anim.updateMode = AnimatorUpdateMode.UnscaledTime;

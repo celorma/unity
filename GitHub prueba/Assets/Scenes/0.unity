@@ -56177,6 +56177,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2004693333}
+    - target: {fileID: 5006362297301906699, guid: ef178c68ddc017441b100167f183c7ab,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: cargarScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 5006362297499111720, guid: ef178c68ddc017441b100167f183c7ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -56529,6 +56534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mecha_boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224331952004495922, guid: 55d37e300d0553441b3347dd6f3949b9,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55d37e300d0553441b3347dd6f3949b9, type: 3}
